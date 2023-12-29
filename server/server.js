@@ -3,6 +3,8 @@ const app = express();
 
 const port = 4000;
 
+require('./database/db')
+
 
 app.get("/", async (req, res) => {
     res.send("Server is running");
